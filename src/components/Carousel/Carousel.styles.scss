@@ -1,0 +1,21 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+.carousel-container {
+  height: 50vw;
+  width: 100vw;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel {
+  max-width: 30vw;
+  width: 100%;
+  max-height: 20vh;
+  height: 100%;
+  overflow: hidden;
+
+  &-img {
+    width: 100%;
+    height: auto;
+  }
+}

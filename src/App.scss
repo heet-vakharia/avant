@@ -1,0 +1,17 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #08415c;
+}
+.logo {
+  .small-circle {
+    fill: #65889f;
+  }
+  .large-circle {
+    fill: #3ed3cd;
+  }
+  .logo__text--letter {
+    fill: #122d42;
+  }
+}

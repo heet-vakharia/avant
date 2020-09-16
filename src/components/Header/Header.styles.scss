@@ -1,0 +1,15 @@
+@import "../Varible.scss";
+.header {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .quote {
+    z-index: 1;
+    color: $magic-mint;
+    font-size: 7rem;
+    width: 80%;
+  }
+}

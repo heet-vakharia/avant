@@ -1,0 +1,27 @@
+@import "../Varible.scss";
+.nav {
+  display: flex;
+  height: 3rem;
+  overflow: hidden;
+  margin: 4rem 0;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+  align-items: center;
+  .login-register {
+    display: flex;
+    align-items: center;
+  }
+  .nav-item {
+    color: $magic-mint;
+    font-size: 2.5rem;
+    text-decoration: none;
+    list-style: none;
+    margin: 0 1rem;
+    &:hover {
+      border-bottom: 2px solid $magic-mint;
+    }
+  }
+}

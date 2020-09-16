@@ -1,23 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.styles.scss";
 
 const Navbar = ({ isUserLogIn, setIsUserLogin }) => {
   return (
-    <nav className="navbar">
-      <Link to="/" className="nav-items">
-        <li>Home</li>
-      </Link>
-      <Link to="/" className="nav-items">
+    <nav className="nav">
+      {isUserLogIn ? (
+        <Link to="/" className="nav-item">
+          <li>Home</li>
+        </Link>
+      ) : null}
+      {isUserLogIn ? null : (
+        <Link to="/register" className="nav-item">
+          <li> Register</li>
+        </Link>
+      )}
+
+      <Link to="/" className="nav-item">
         <li onClick={() => setIsUserLogin(false)}>
           {isUserLogIn ? "Sign Out" : "Sign In"}
         </li>
       </Link>
-      <Link to="/register" className="nav-items">
-        <li> Register</li>
-      </Link>
-      <Link to="/cart" className="nav-items">
-        <li> Cart </li>
-      </Link>
+
+      {isUserLogIn ? (
+        <Link to="/cart" className="nav-item">
+          <li> Cart </li>
+        </Link>
+      ) : null}
     </nav>
   );
 };
