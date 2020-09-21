@@ -6,10 +6,5 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  .quote {
-    z-index: 1;
-    color: $magic-mint;
-    font-size: 7rem;
-    width: 80%;
-  }
+  background: url("../../assets/header-med.jpg") center fixed;
 }

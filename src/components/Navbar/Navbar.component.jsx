@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.styles.scss";
 
-const Navbar = ({ isUserLogIn, setIsUserLogin }) => {
+const Navbar = ({ isUserLogIn, setIsUserLogin, user }) => {
   return (
     <nav className="nav">
       {isUserLogIn ? (
@@ -24,7 +24,7 @@ const Navbar = ({ isUserLogIn, setIsUserLogin }) => {
 
       {isUserLogIn ? (
         <Link to="/cart" className="nav-item">
-          <li> Cart </li>
+          <li> {user.name || "User"} </li>
         </Link>
       ) : null}
     </nav>

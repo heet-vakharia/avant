@@ -1,11 +1,14 @@
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
+@import "../Varible.scss";
+
 .carousel-container {
   height: 50vw;
   width: 100vw;
-  background-color: #fff;
+  background-color: $charleston-green;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .carousel {
   max-width: 30vw;
@@ -13,7 +16,10 @@
   max-height: 20vh;
   height: 100%;
   overflow: hidden;
-
+  &__heading {
+    font-size: 3rem;
+    color: $gainsboro;
+  }
   &-img {
     width: 100%;
     height: auto;

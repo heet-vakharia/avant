@@ -14,7 +14,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar isUserLogIn={isUserLogIn} setIsUserLogin={setIsUserLogin} />
+        <Navbar
+          isUserLogIn={isUserLogIn}
+          setIsUserLogin={setIsUserLogin}
+          user={user}
+        />
 
         {!isUserLogIn ? (
           <Switch>
